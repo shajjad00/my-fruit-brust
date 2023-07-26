@@ -30,9 +30,6 @@
               "p-text": "#12121299",
               "pink-clr": "#F85559",
             },
-            boxShadow: {
-              "3xl": "0px 8px 60px 0px rgba(0, 0, 0, 0.05);",
-            },
           },
         },
       };
@@ -52,9 +49,9 @@
     </style>
   </head>
   <body>
-    <header class="max-w-screen-xl mx-auto mt-12">
+    <header class="w-11/12 mx-auto mt-12">
       <!-- nav section -->
-      <nav>
+      <nav class="">
         <div class="navbar bg-red-500 text-white px-12 py-4 rounded-full">
           <div class="navbar-start hidden lg:flex">
             <ul class="menu menu-horizontal px-1 font-medium">
@@ -67,7 +64,7 @@
             </ul>
           </div>
           <div
-            class="navbar-start flex justify-between flex-row-reverse w-full lg:w-[500px]"
+            class="navbar-start flex justify-between flex-row-reverse lg:w-[500px]"
           >
             <div class="dropdown">
               <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -105,16 +102,16 @@
               <h3 class="text-4xl font-bold">Fruit Burst</h3>
             </div>
           </div>
-          <div class="navbar-end relative hidden lg:inline-block">
+          <!-- <div class="navbar-end relative hidden lg:inline-block">
             <input
-              class="p-4 rounded-full lg:w-[400px]"
+              class="p-4 rounded-full  lg:w-[400px]"
               type="text"
               placeholder="Search here"
             />
             <i
               class="fa-solid fa-magnifying-glass absolute text-gray-600 text-xl top-4 right-12"
             ></i>
-          </div>
+          </div> -->
         </div>
       </nav>
       <!-- nav section end -->
@@ -546,7 +543,7 @@
       <!-- deal of the day end-->
       <!-- team section -->
       <section
-        class="mt-28 bg-hero-banner1 bg-cover bg-no-repeat py-24 px-2 lg:px-40 border border-red-600"
+        class="mt-28 bg-hero-banner1 bg-cover bg-no-repeat py-24 px-2 lg:px-40 rounded-xl"
       >
         <div>
           <h2 class="text-3xl lg:text-7xl font-bold text-center text-white">
@@ -635,9 +632,10 @@
               ></i>
               <div class="text-center lg:text-left">
                 <h3 class="text-xl font-bold">Dedicated Team</h3>
-                <div
-                  class="border-t-2 border-gray-500 w-16 my-2 mx-auto lg:mr-auto"
-                ></div>
+                <!-- horizontal line -->
+                <div class="mt-3 flex justify-center lg:justify-start">
+                  <hr class="w-24 h-[3px] bg-gray-600" />
+                </div>
                 <p>
                   Professional employees are there for you to pick the most
                   amazing and fresh fruits.
@@ -654,7 +652,9 @@
               ></i>
               <div class="text-center lg:text-left">
                 <h3 class="text-xl font-bold">Fresh is Best</h3>
-                <div class="border-t-2 border-gray-500 w-16 my-2"></div>
+                <div class="mt-3 flex justify-center lg:justify-start">
+                  <hr class="w-24 h-[3px] bg-gray-600" />
+                </div>
                 <p>
                   Professional employees are there for you to pick the most
                   amazing and fresh fruits.
@@ -671,7 +671,9 @@
               ></i>
               <div class="text-center lg:text-left">
                 <h3 class="text-xl font-bold">Gift Certificates</h3>
-                <div class="border-t-2 border-gray-500 w-16 my-2"></div>
+                <div class="mt-3 flex justify-center lg:justify-start">
+                  <hr class="w-24 h-[3px] bg-gray-600" />
+                </div>
                 <p>
                   Professional employees are there for you to pick the most
                   amazing and fresh fruits.
@@ -694,9 +696,9 @@
               >
                 <div class="text-center lg:text-right">
                   <h3 class="text-xl font-bold">Integrated Supplier</h3>
-                  <div
-                    class="border-t-2 border-gray-500 w-16 my-2 ml-auto"
-                  ></div>
+                  <div class="mt-3 flex justify-center lg:justify-end">
+                    <hr class="w-24 h-[3px] bg-gray-600" />
+                  </div>
                   <p>
                     Professional employees are there for you to pick the most
                     amazing and fresh fruits.
@@ -713,9 +715,9 @@
               >
                 <div class="text-center lg:text-right">
                   <h3 class="text-xl font-bold">Sustainable Practice</h3>
-                  <div
-                    class="border-t-2 border-gray-500 w-16 my-2 ml-auto"
-                  ></div>
+                  <div class="mt-3 flex justify-center lg:justify-end">
+                    <hr class="w-24 h-[3px] bg-gray-600" />
+                  </div>
                   <p>
                     Professional employees are there for you to pick the most
                     amazing and fresh fruits.
@@ -732,9 +734,9 @@
               >
                 <div class="text-center lg:text-right">
                   <h3 class="text-xl font-bold">The Benefits Only</h3>
-                  <div
-                    class="border-t-2 border-gray-500 w-16 my-2 ml-auto"
-                  ></div>
+                  <div class="mt-3 flex justify-center lg:justify-end">
+                    <hr class="w-24 h-[3px] bg-gray-600" />
+                  </div>
                   <p>
                     Professional employees are there for you to pick the most
                     amazing and fresh fruits.
