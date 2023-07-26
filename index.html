@@ -51,9 +51,9 @@
   <body>
     <header class="max-w-screen-xl mx-auto mt-12">
       <!-- nav section -->
-      <nav>
+      <nav class="">
         <div
-          class="navbar bg-white lg:bg-red-500 text-white px-3 md:px-12 py-4 rounded-full"
+          class="navbar bg-white lg:bg-red-500 text-white md:px-12 py-4 rounded-full"
         >
           <div class="navbar-start hidden lg:flex">
             <ul class="menu menu-horizontal px-1 font-medium text-xl">
@@ -75,11 +75,11 @@
               </div>
             </div>
 
-            <!-- icon -->
-            <div
-              class="navbar-end absolute left-[280px] md:left-[540px] cursor-pointer"
-            >
-              <div class="dropdown flex flex-row-reverse">
+            <div class="navbar-end absolute cursor-pointer">
+              <!-- icon -->
+              <div
+                class="dropdown flex flex-row-reverse left-[280px] md:left-[550px]"
+              >
                 <label
                   tabindex="0"
                   class="btn lg:hidden text-gray-800 lg:bg-red-500 lg:text-white border-none"
@@ -113,9 +113,9 @@
               </div>
 
               <!-- search  -->
-              <div class="navbar-end relative hidden lg:inline-block">
+              <div class="navbar-end relative hidden lg:inline-block left-72">
                 <input
-                  class="py-4 pr-28 pl-4 rounded-full"
+                  class="py-4 pr-28 pl-4 rounded-full ml"
                   type="text"
                   placeholder="Search here"
                 />
