@@ -49,10 +49,12 @@
     </style>
   </head>
   <body>
-    <header class="w-11/12 mx-auto mt-12">
+    <header class="max-w-screen-xl mx-auto mt-12">
       <!-- nav section -->
       <nav class="">
-        <div class="navbar bg-red-500 text-white px-12 py-4 rounded-full">
+        <div
+          class="navbar bg-red-500 text-white px-3 md:px-12 py-4 rounded-full"
+        >
           <div class="navbar-start hidden lg:flex">
             <ul class="menu menu-horizontal px-1 font-medium">
               <li><a>Home</a></li>
@@ -63,10 +65,11 @@
               <li><a>Shop</a></li>
             </ul>
           </div>
+          <!-- width here -->
           <div
             class="navbar-start flex justify-between flex-row-reverse lg:w-[500px]"
           >
-            <div class="dropdown">
+            <div class="dropdown ml-auto">
               <label tabindex="0" class="btn btn-ghost lg:hidden">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -78,14 +81,14 @@
                   <path
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    stroke-width="2"
+                    stroke-width="4"
                     d="M4 6h16M4 12h8m-8 6h16"
                   />
                 </svg>
               </label>
               <ul
                 tabindex="0"
-                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 font-medium bg-red-500"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52 font-medium bg-red-500"
               >
                 <li><a>Home</a></li>
                 <li>
@@ -96,22 +99,22 @@
               </ul>
             </div>
             <div
-              class="navbar-end lg:navbar-center w-fit flex justify-center gap-2 items-center"
+              class="navbar-start lg:navbar-center w-fit flex justify-center gap-2 items-center"
             >
               <img src="./images/logo.png" alt="" />
               <h3 class="text-4xl font-bold">Fruit Burst</h3>
             </div>
           </div>
-          <!-- <div class="navbar-end relative hidden lg:inline-block">
+          <div class="navbar-end relative hidden lg:inline-block">
             <input
-              class="p-4 rounded-full  lg:w-[400px]"
+              class="p-4 rounded-full lg:w-[400px]"
               type="text"
               placeholder="Search here"
             />
             <i
-              class="fa-solid fa-magnifying-glass absolute text-gray-600 text-xl top-4 right-12"
+              class="fa-solid fa-magnifying-glass absolute text-gray-600 text-xl top-4 right-24"
             ></i>
-          </div> -->
+          </div>
         </div>
       </nav>
       <!-- nav section end -->
@@ -271,9 +274,9 @@
       <!-- deal of the day -->
       <section>
         <div
-          class="mt-40 flex flex-col gap-4 md:text-center md:flex-col lg:justify-between lg:flex-row items-center"
+          class="mt-20 lg:mt-40 flex flex-col gap-4 md:text-center md:flex-col lg:justify-between lg:flex-row items-center"
         >
-          <div class="space-y-6">
+          <div class="space-y-6 text-center lg:text-start">
             <h2 class="text-4xl font-bold">Deal of the day</h2>
             <p class="text-gray-400">
               Contrary to popular belief, is not simply random text. It has
@@ -542,72 +545,76 @@
       </section>
       <!-- deal of the day end-->
       <!-- team section -->
-      <section
-        class="mt-28 bg-hero-banner1 bg-cover bg-no-repeat py-24 px-2 lg:px-40 rounded-xl"
+      <div
+        class="hero mt-20 min-h-[calc(100vh-100px)]"
+        style="background-image: url('./images/team.png')"
       >
-        <div>
-          <h2 class="text-3xl lg:text-7xl font-bold text-center text-white">
-            Meet the team section
-          </h2>
-          <p class="text-center mt-10 mb-4 text-white">
-            Contrary to popular belief, is not simply random text. It has roots
-            in a piece of classical <br />
-            Latin literature from 45 BC, making it over 2000 years old.
-          </p>
+        <div class="hero-overlay bg-opacity-60"></div>
+        <div class="hero-content text-center text-neutral-content">
+          <div class="">
+            <h1 class="text-3xl lg:text-7xl font-bold text-center text-white">
+              Meet the team section
+            </h1>
+            <p class="text-center mt-10 mb-4 text-white">
+              Contrary to popular belief, is not simply random text. It has
+              roots in a piece of classical <br />
+              Latin literature from 45 BC, making it over 2000 years old.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+              <!-- member-1 -->
+              <div class="flex justify-center items-center flex-col mb-4">
+                <img class="mb-2 lg:mb-4" src="./images/member1.png" alt="" />
+                <h3 class="text-white text-xl font-bold">Awlad Hossain</h3>
+                <p class="text-white font-medium">Fruits Expert</p>
+                <p class="text-[#F85559] text-2xl mt-3">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-linkedin"></i>
+                </p>
+              </div>
+              <!-- member-1 end -->
+              <!-- member-2-->
+              <div class="flex justify-center items-center flex-col mb-4">
+                <img class="mb-2 lg:mb-4" src="./images/member2.png" alt="" />
+                <h3 class="text-white text-xl font-bold">Safia Chowdhury</h3>
+                <p class="text-white font-medium">Fruits Expert</p>
+                <p class="text-[#F85559] text-2xl mt-3">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-linkedin"></i>
+                </p>
+              </div>
+              <!-- member-2 end -->
+              <!-- member-3 -->
+              <div class="flex justify-center items-center flex-col mb-4">
+                <img class="mb-2 lg:mb-4" src="./images/member3.png" alt="" />
+                <h3 class="text-white text-xl font-bold">Rokib Hossain</h3>
+                <p class="text-white font-medium">Fruits Expert</p>
+                <p class="text-[#F85559] text-2xl mt-3">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-linkedin"></i>
+                </p>
+              </div>
+              <!-- member-3 end -->
+              <!-- member-4 -->
+              <div
+                class="flex font-medium justify-center items-center flex-col mb-4"
+              >
+                <img class="mb-2 lg:mb-4" src="./images/member4.png" alt="" />
+                <h3 class="text-white text-xl font-bold">Chaity</h3>
+                <p class="text-white font-medium">Fruits Expert</p>
+                <p class="text-[#F85559] text-2xl mt-3">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-linkedin"></i>
+                </p>
+              </div>
+              <!-- member-4 end -->
+            </div>
+          </div>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-          <!-- member-1 -->
-          <div class="flex justify-center items-center flex-col mb-4">
-            <img class="mb-2 lg:mb-4" src="./images/member1.png" alt="" />
-            <h3 class="text-white text-xl font-bold">Awlad Hossain</h3>
-            <p class="text-white font-medium">Fruits Expert</p>
-            <p class="text-[#F85559] text-2xl mt-3">
-              <i class="fa-brands fa-facebook"></i>
-              <i class="fa-brands fa-twitter"></i>
-              <i class="fa-brands fa-linkedin"></i>
-            </p>
-          </div>
-          <!-- member-1 end -->
-          <!-- member-2-->
-          <div class="flex justify-center items-center flex-col mb-4">
-            <img class="mb-2 lg:mb-4" src="./images/member2.png" alt="" />
-            <h3 class="text-white text-xl font-bold">Safia Chowdhury</h3>
-            <p class="text-white font-medium">Fruits Expert</p>
-            <p class="text-[#F85559] text-2xl mt-3">
-              <i class="fa-brands fa-facebook"></i>
-              <i class="fa-brands fa-twitter"></i>
-              <i class="fa-brands fa-linkedin"></i>
-            </p>
-          </div>
-          <!-- member-2 end -->
-          <!-- member-3 -->
-          <div class="flex justify-center items-center flex-col mb-4">
-            <img class="mb-2 lg:mb-4" src="./images/member3.png" alt="" />
-            <h3 class="text-white text-xl font-bold">Rokib Hossain</h3>
-            <p class="text-white font-medium">Fruits Expert</p>
-            <p class="text-[#F85559] text-2xl mt-3">
-              <i class="fa-brands fa-facebook"></i>
-              <i class="fa-brands fa-twitter"></i>
-              <i class="fa-brands fa-linkedin"></i>
-            </p>
-          </div>
-          <!-- member-3 end -->
-          <!-- member-4 -->
-          <div
-            class="flex font-medium justify-center items-center flex-col mb-4"
-          >
-            <img class="mb-2 lg:mb-4" src="./images/member4.png" alt="" />
-            <h3 class="text-white text-xl font-bold">Chaity</h3>
-            <p class="text-white font-medium">Fruits Expert</p>
-            <p class="text-[#F85559] text-2xl mt-3">
-              <i class="fa-brands fa-facebook"></i>
-              <i class="fa-brands fa-twitter"></i>
-              <i class="fa-brands fa-linkedin"></i>
-            </p>
-          </div>
-          <!-- member-4 end -->
-        </div>
-      </section>
+      </div>
       <!-- team section end-->
 
       <!-- choose us section -->
@@ -633,7 +640,7 @@
               <div class="text-center lg:text-left">
                 <h3 class="text-xl font-bold">Dedicated Team</h3>
                 <!-- horizontal line -->
-                <div class="mt-3 flex justify-center lg:justify-start">
+                <div class="mt-3 mb-2 flex justify-center lg:justify-start">
                   <hr class="w-24 h-[3px] bg-gray-600" />
                 </div>
                 <p>
@@ -652,7 +659,7 @@
               ></i>
               <div class="text-center lg:text-left">
                 <h3 class="text-xl font-bold">Fresh is Best</h3>
-                <div class="mt-3 flex justify-center lg:justify-start">
+                <div class="mt-3 mb-2 flex justify-center lg:justify-start">
                   <hr class="w-24 h-[3px] bg-gray-600" />
                 </div>
                 <p>
@@ -671,7 +678,7 @@
               ></i>
               <div class="text-center lg:text-left">
                 <h3 class="text-xl font-bold">Gift Certificates</h3>
-                <div class="mt-3 flex justify-center lg:justify-start">
+                <div class="mt-3 mb-2 flex justify-center lg:justify-start">
                   <hr class="w-24 h-[3px] bg-gray-600" />
                 </div>
                 <p>
@@ -696,7 +703,7 @@
               >
                 <div class="text-center lg:text-right">
                   <h3 class="text-xl font-bold">Integrated Supplier</h3>
-                  <div class="mt-3 flex justify-center lg:justify-end">
+                  <div class="mt-3 mb-2 flex justify-center lg:justify-end">
                     <hr class="w-24 h-[3px] bg-gray-600" />
                   </div>
                   <p>
@@ -715,7 +722,7 @@
               >
                 <div class="text-center lg:text-right">
                   <h3 class="text-xl font-bold">Sustainable Practice</h3>
-                  <div class="mt-3 flex justify-center lg:justify-end">
+                  <div class="mt-3 mb-2 flex justify-center lg:justify-end">
                     <hr class="w-24 h-[3px] bg-gray-600" />
                   </div>
                   <p>
@@ -734,7 +741,7 @@
               >
                 <div class="text-center lg:text-right">
                   <h3 class="text-xl font-bold">The Benefits Only</h3>
-                  <div class="mt-3 flex justify-center lg:justify-end">
+                  <div class="mt-3 mb-2 flex justify-center lg:justify-end">
                     <hr class="w-24 h-[3px] bg-gray-600" />
                   </div>
                   <p>
@@ -781,6 +788,9 @@
           </div>
         </div>
       </div>
+
+      <!-- extra section -->
+      <!-- extra section -->
     </footer>
   </body>
 </html>
