@@ -28,6 +28,7 @@
             },
             color: {
               "p-text": "#12121299",
+              "pink-clr": "#F85559",
             },
             boxShadow: {
               "3xl": "0px 8px 60px 0px rgba(0, 0, 0, 0.05);",
@@ -241,11 +242,9 @@
       <!-- carousel section  end-->
 
       <!-- fruits item section -->
-      <div
-        class="shadow-[0px 8px 60px 0px rgba(0, 0, 0, 0.05)] relative text-[rgba(18, 18, 18, 0.80)]"
-      >
+      <div class="relative text-[rgba(18, 18, 18, 0.80)]">
         <div
-          class="absolute -top-[120px] left-24 hidden lg:grid lg:grid-cols-5 text-gray-700 bg-white min-w-[1100px] px-14 py-9"
+          class="absolute -top-[120px] left-24 hidden lg:grid lg:grid-cols-5 text-gray-700 bg-white min-w-[1100px] px-14 py-9 drop-shadow-[0_10px_10px_rgba(0,0,0,0.25)]"
         >
           <div class="flex flex-col items-center justify-center">
             <img src="./images/fruit1.png" alt="" />
@@ -285,6 +284,7 @@
               Latin literature from 45 BC, making it over 2000 years old.
             </p>
           </div>
+          <!-- countdown section end-->
           <div class="text-p-text">
             <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
               <div class="flex flex-col text-p-text">
@@ -325,57 +325,218 @@
               </div>
             </div>
           </div>
+          <!-- countdown section -->
         </div>
         <!-- fruits price card-->
-
         <div class="mt-10 grid-cols-1 grid md:grid-cols-2 lg:grid-cols-4 gap-5">
           <!-- card -1 -->
           <div
-            class="flex justify-center items-center flex-col border-2 border-[rgba(18, 18, 18, 0.10)] border-2"
+            class="flex justify-center items-center flex-col border-2 border-[rgba(18, 18, 18, 0.10)] border-2 py-8"
           >
             <img class="mb-8" src="./images/fruit6.png" alt="" />
             <h3 class="text-[#121212] font-bold border-b-2 pb-3">
               12.90$ - 18.85$
             </h3>
             <p class="text-[#12121299] my-4">Apples</p>
-            <p></p>
-            <button class="btn text-[#F85559]">Details</button>
+            <p class="text-[#F85559] mb-3">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </p>
+
+            <!-- modal-1 -->
+            <button class="btn text-[#F85559]" onclick="my_modal_5.showModal()">
+              Details
+            </button>
+            <dialog
+              id="my_modal_5"
+              class="modal modal-bottom max-w-[400px] ml-4 lg:mx-auto sm:modal-middle"
+            >
+              <form
+                method="dialog"
+                class="modal-box flex justify-center items-center flex-col"
+              >
+                <img src="./images/fruit6.png" alt="" />
+                <h3 class="font-bold text-2xl">Red Dragon</h3>
+                <p class="py-4 text-center">
+                  Professional employees are there for you to pick the most
+                  amazing and fresh fruits.
+                </p>
+                <p class="text-[#F85559] mb-1">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </p>
+                <div class="modal-action">
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button class="btn border text-[#F85559] border-[#F85559]">
+                    Close
+                  </button>
+                  <button class="btn text-white bg-[#F85559]">Buy Now</button>
+                </div>
+              </form>
+            </dialog>
+            <!-- modal-end -->
           </div>
           <!-- card -2 -->
           <div
-            class="flex justify-center items-center flex-col border-2 border-[rgba(18, 18, 18, 0.10)]"
+            class="flex justify-center items-center flex-col border-2 border-[rgba(18, 18, 18, 0.10)] py-8"
           >
             <img class="mb-8" src="./images/fruit7.png" alt="" />
             <h3 class="text-[#121212] font-bold border-b-2 pb-3">
               12.90$ - 18.85$
             </h3>
-            <p class="text-[#12121299] my-4">Apples</p>
-            <p></p>
-            <button class="btn text-[#F85559]">Details</button>
+            <p class="text-[#12121299] my-4">Orange</p>
+            <p class="text-[#F85559] mb-3">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </p>
+            <!-- modal-2 -->
+            <button class="btn text-[#F85559]" onclick="my_modal_4.showModal()">
+              Details
+            </button>
+            <dialog
+              id="my_modal_4"
+              class="modal modal-bottom max-w-[400px] ml-4 lg:mx-auto sm:modal-middle"
+            >
+              <form
+                method="dialog"
+                class="modal-box flex justify-center items-center flex-col"
+              >
+                <img src="./images/fruit7.png" alt="" />
+                <h3 class="font-bold text-2xl">Orange</h3>
+                <p class="py-4 text-center">
+                  Professional employees are there for you to pick the most
+                  amazing and fresh fruits.
+                </p>
+                <p class="text-[#F85559] mb-1">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </p>
+                <div class="modal-action">
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button class="btn border text-[#F85559] border-[#F85559]">
+                    Close
+                  </button>
+                  <button class="btn text-white bg-[#F85559]">Buy Now</button>
+                </div>
+              </form>
+            </dialog>
+            <!-- modal-end -->
           </div>
           <!-- card -3 -->
           <div
-            class="flex justify-center items-center flex-col border-2 border-[rgba(18, 18, 18, 0.10)]"
+            class="flex justify-center items-center flex-col border-2 border-[rgba(18, 18, 18, 0.10)] py-8"
           >
             <img class="mb-8" src="./images/fruit8.png" alt="" />
             <h3 class="text-[#121212] font-bold border-b-2 pb-3">
               12.90$ - 18.85$
             </h3>
-            <p class="text-[#12121299] my-4">Apples</p>
-            <p></p>
-            <button class="btn text-[#F85559]">Details</button>
+            <p class="text-[#12121299] my-4">Red Dragon</p>
+            <p class="text-[#F85559] mb-3">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </p>
+            <!-- modal-3 -->
+            <button class="btn text-[#F85559]" onclick="my_modal_3.showModal()">
+              Details
+            </button>
+            <dialog
+              id="my_modal_3"
+              class="modal modal-bottom max-w-[400px] ml-4 lg:mx-auto sm:modal-middle"
+            >
+              <form
+                method="dialog"
+                class="modal-box flex justify-center items-center flex-col"
+              >
+                <img src="./images/fruit8.png" alt="" />
+                <h3 class="font-bold text-2xl">Red Dragon</h3>
+                <p class="py-4 text-center">
+                  Professional employees are there for you to pick the most
+                  amazing and fresh fruits.
+                </p>
+                <p class="text-[#F85559] mb-1">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </p>
+                <div class="modal-action">
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button class="btn border text-[#F85559] border-[#F85559]">
+                    Close
+                  </button>
+                  <button class="btn text-white bg-[#F85559]">Buy Now</button>
+                </div>
+              </form>
+            </dialog>
+            <!-- modal-end -->
           </div>
           <!-- card -4 -->
           <div
-            class="flex justify-center items-center flex-col border-2 border-[rgba(18, 18, 18, 0.10)]"
+            class="flex justify-center items-center flex-col border-2 border-[rgba(18, 18, 18, 0.10)] py-8"
           >
             <img class="mb-8" src="./images/fruit9.png" alt="" />
             <h3 class="text-[#121212] font-bold border-b-2 pb-3">
               12.90$ - 18.85$
             </h3>
-            <p class="text-[#12121299] my-4">Apples</p>
-            <p></p>
-            <button class="btn text-[#F85559]">Details</button>
+            <p class="text-[#12121299] my-4">Bananas</p>
+            <p class="text-[#F85559] mb-3">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </p>
+            <!-- modal-4 -->
+            <button class="btn text-[#F85559]" onclick="my_modal_2.showModal()">
+              Details
+            </button>
+            <dialog
+              id="my_modal_2"
+              class="modal modal-bottom max-w-[400px] ml-4 lg:mx-auto sm:modal-middle"
+            >
+              <form
+                method="dialog"
+                class="modal-box flex justify-center items-center flex-col"
+              >
+                <img src="./images/fruit9.png" alt="" />
+                <h3 class="font-bold text-2xl">Bananas</h3>
+                <p class="py-4 text-center">
+                  Professional employees are there for you to pick the most
+                  amazing and fresh fruits.
+                </p>
+                <p class="text-[#F85559] mb-1">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </p>
+                <div class="modal-action">
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button class="btn border text-[#F85559] border-[#F85559]">
+                    Close
+                  </button>
+                  <button class="btn text-white bg-[#F85559]">Buy Now</button>
+                </div>
+              </form>
+            </dialog>
+            <!-- modal-end -->
           </div>
         </div>
         <div class="mt-10 flex justify-center">
@@ -401,51 +562,53 @@
           <!-- member-1 -->
           <div class="flex justify-center items-center flex-col mb-4">
             <img class="mb-2 lg:mb-4" src="./images/member1.png" alt="" />
-            <h3 class="text-white">Awlad Hossain</h3>
-            <p class="text-white">Fruits Expert</p>
-            <p class="text-[#F85559]">
+            <h3 class="text-white text-xl font-bold">Awlad Hossain</h3>
+            <p class="text-white font-medium">Fruits Expert</p>
+            <p class="text-[#F85559] text-2xl mt-3">
               <i class="fa-brands fa-facebook"></i>
               <i class="fa-brands fa-twitter"></i>
               <i class="fa-brands fa-linkedin"></i>
             </p>
           </div>
           <!-- member-1 end -->
-          <!-- member-1 -->
+          <!-- member-2-->
           <div class="flex justify-center items-center flex-col mb-4">
             <img class="mb-2 lg:mb-4" src="./images/member2.png" alt="" />
-            <h3 class="text-white">Awlad Hossain</h3>
-            <p class="text-white">Fruits Expert</p>
-            <p class="text-[#F85559]">
+            <h3 class="text-white text-xl font-bold">Safia Chowdhury</h3>
+            <p class="text-white font-medium">Fruits Expert</p>
+            <p class="text-[#F85559] text-2xl mt-3">
               <i class="fa-brands fa-facebook"></i>
               <i class="fa-brands fa-twitter"></i>
               <i class="fa-brands fa-linkedin"></i>
             </p>
           </div>
-          <!-- member-1 end -->
-          <!-- member-1 -->
+          <!-- member-2 end -->
+          <!-- member-3 -->
           <div class="flex justify-center items-center flex-col mb-4">
             <img class="mb-2 lg:mb-4" src="./images/member3.png" alt="" />
-            <h3 class="text-white">Awlad Hossain</h3>
-            <p class="text-white">Fruits Expert</p>
-            <p class="text-[#F85559]">
+            <h3 class="text-white text-xl font-bold">Rokib Hossain</h3>
+            <p class="text-white font-medium">Fruits Expert</p>
+            <p class="text-[#F85559] text-2xl mt-3">
               <i class="fa-brands fa-facebook"></i>
               <i class="fa-brands fa-twitter"></i>
               <i class="fa-brands fa-linkedin"></i>
             </p>
           </div>
-          <!-- member-1 end -->
-          <!-- member-1 -->
-          <div class="flex justify-center items-center flex-col mb-4">
+          <!-- member-3 end -->
+          <!-- member-4 -->
+          <div
+            class="flex font-medium justify-center items-center flex-col mb-4"
+          >
             <img class="mb-2 lg:mb-4" src="./images/member4.png" alt="" />
-            <h3 class="text-white">Awlad Hossain</h3>
-            <p class="text-white">Fruits Expert</p>
-            <p class="text-[#F85559]">
+            <h3 class="text-white text-xl font-bold">Chaity</h3>
+            <p class="text-white font-medium">Fruits Expert</p>
+            <p class="text-[#F85559] text-2xl mt-3">
               <i class="fa-brands fa-facebook"></i>
               <i class="fa-brands fa-twitter"></i>
               <i class="fa-brands fa-linkedin"></i>
             </p>
           </div>
-          <!-- member-1 end -->
+          <!-- member-4 end -->
         </div>
       </section>
       <!-- team section end-->
@@ -598,14 +761,14 @@
           </div>
           <div>
             <ul
-              class="list-none flex justify-center items-center flex-wrap lg:flex-nowrap gap-0"
+              class="list-none flex justify-center items-center flex-wrap lg:flex-nowrap"
             >
-              <li class="mr-10 my-12 font-semibold text-xl">home</li>
-              <li class="mr-10 my-12 font-semibold text-xl">about us</li>
-              <li class="mr-10 my-12 font-semibold text-xl">shop</li>
-              <li class="mr-10 my-12 font-semibold text-xl">all fruits</li>
-              <li class="mr-10 my-12 font-semibold text-xl">support</li>
-              <li class="mr-10 my-12 font-semibold text-xl">my account</li>
+              <li class="mr-10 my-12 font-semibold text-xl">Home</li>
+              <li class="mr-10 my-12 font-semibold text-xl">About Us</li>
+              <li class="mr-10 my-12 font-semibold text-xl">Shop</li>
+              <li class="mr-10 my-12 font-semibold text-xl">All Fruits</li>
+              <li class="mr-10 my-12 font-semibold text-xl">Support</li>
+              <li class="mr-10 my-12 font-semibold text-xl">My Account</li>
             </ul>
           </div>
           <div class="flex justify-center items-center gap-10 text-4xl">
