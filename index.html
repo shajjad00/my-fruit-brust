@@ -49,7 +49,7 @@
     </style>
   </head>
   <body>
-    <header class="max-w-screen-xl mx-auto mt-12">
+    <header class="max-w-screen-xl mx-auto mt-12 px-4">
       <!-- nav section -->
       <nav class="">
         <div
@@ -80,7 +80,7 @@
             <div class="navbar-end absolute cursor-pointer">
               <!-- icon -->
               <div
-                class="dropdown flex flex-row-reverse left-[280px] md:left-[550px]"
+                class="dropdown flex flex-row-reverse left-[260px] md:left-[550px]"
               >
                 <label
                   tabindex="0"
@@ -103,7 +103,7 @@
                 </label>
                 <ul
                   tabindex="0"
-                  class="menu menu-sm dropdown-content mt-5 z-[1] p-2 shadow bg-base-100 rounded-box w-52 bg-red-500 font-medium"
+                  class="menu menu-sm dropdown-content mt-11 z-[1] p-2 shadow bg-base-100 rounded-box w-52 bg-red-500 font-medium"
                 >
                   <li><a>Home</a></li>
                   <li tabindex="0">
@@ -306,7 +306,7 @@
                   </span>
                   <i class="fa-solid fa-ellipsis-vertical"></i>
                 </div>
-                Days
+                <div class="text-gray-500">Days</div>
               </div>
 
               <div class="flex flex-col">
@@ -316,7 +316,7 @@
                   </span>
                   <i class="fa-solid fa-ellipsis-vertical"></i>
                 </div>
-                Hours
+                <div class="text-gray-500">Hours</div>
               </div>
               <div class="flex flex-col">
                 <div class="flex items-center gap-1">
@@ -325,7 +325,7 @@
                   </span>
                   <i class="fa-solid fa-ellipsis-vertical"></i>
                 </div>
-                Min
+                <div class="text-gray-500">Min</div>
               </div>
               <div class="flex flex-col">
                 <div class="flex items-center gap-1">
@@ -333,7 +333,7 @@
                     <span style="--value: 38"></span>
                   </span>
                 </div>
-                Sec
+                <div class="text-gray-500">Sec</div>
               </div>
             </div>
           </div>
@@ -364,7 +364,7 @@
             </button>
             <dialog
               id="my_modal_5"
-              class="modal modal-bottom max-w-[400px] ml-4 mx-auto sm:modal-middle"
+              class="modal modal-bottom max-w-[400px] ml-4 lg:mx-auto sm:modal-middle"
             >
               <form
                 method="dialog"
@@ -384,7 +384,6 @@
                   <i class="fa-regular fa-star"></i>
                 </p>
                 <div class="modal-action">
-                  <!-- if there is a button in form, it will close the modal -->
                   <button class="btn border text-[#F85559] border-[#F85559]">
                     Close
                   </button>
@@ -436,7 +435,6 @@
                   <i class="fa-regular fa-star"></i>
                 </p>
                 <div class="modal-action">
-                  <!-- if there is a button in form, it will close the modal -->
                   <button class="btn border text-[#F85559] border-[#F85559]">
                     Close
                   </button>
@@ -488,7 +486,6 @@
                   <i class="fa-regular fa-star"></i>
                 </p>
                 <div class="modal-action">
-                  <!-- if there is a button in form, it will close the modal -->
                   <button class="btn border text-[#F85559] border-[#F85559]">
                     Close
                   </button>
@@ -540,7 +537,6 @@
                   <i class="fa-regular fa-star"></i>
                 </p>
                 <div class="modal-action">
-                  <!-- if there is a button in form, it will close the modal -->
                   <button class="btn border text-[#F85559] border-[#F85559]">
                     Close
                   </button>
@@ -778,27 +774,27 @@
     <footer>
       <div class="bg-[#121212] text-white py-32 px-3 lg:px-40 mt-20 lg:mt-32">
         <div>
-          <div class="flex items-center justify-center">
+          <div class="flex items-center justify-center gap-3">
             <img src="./images/logo.png" alt="" />
-            <h3 class="text-5xl font-bold">Fruit Burst</h3>
+            <h3 class="text-5xl font-bold cursor-pointer">Fruit Burst</h3>
           </div>
           <div>
             <ul
-              class="list-none flex justify-center items-center flex-wrap lg:flex-nowrap"
+              class="list-none flex justify-center items-center flex-wrap lg:flex-nowrap gap-10 my-8 lg:my-12"
             >
-              <li class="mr-10 my-12 font-semibold text-xl">Home</li>
-              <li class="mr-10 my-12 font-semibold text-xl">About Us</li>
-              <li class="mr-10 my-12 font-semibold text-xl">Shop</li>
-              <li class="mr-10 my-12 font-semibold text-xl">All Fruits</li>
-              <li class="mr-10 my-12 font-semibold text-xl">Support</li>
-              <li class="mr-10 my-12 font-semibold text-xl">My Account</li>
+              <li class="font-semibold text-xl cursor-pointer">Home</li>
+              <li class="font-semibold text-xl cursor-pointer">About Us</li>
+              <li class="font-semibold text-xl cursor-pointer">Shop</li>
+              <li class="font-semibold text-xl cursor-pointer">All Fruits</li>
+              <li class="font-semibold text-xl cursor-pointer">Support</li>
+              <li class="font-semibold text-xl cursor-pointer">My Account</li>
             </ul>
           </div>
           <div class="flex justify-center items-center gap-10 text-4xl">
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-youtube"></i>
-            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-twitter cursor-pointer"></i>
+            <i class="fa-brands fa-facebook cursor-pointer"></i>
+            <i class="fa-brands fa-youtube cursor-pointer"></i>
+            <i class="fa-brands fa-linkedin cursor-pointer"></i>
           </div>
         </div>
       </div>
